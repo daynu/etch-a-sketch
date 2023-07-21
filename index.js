@@ -5,8 +5,10 @@ window.onload = () =>
 
     let color = "black";
     let divsContainer = document.getElementById('divs-container');
+
+
     function createDivs(size)
-{   
+    {   
     divsContainer.innerHTML = '';
     for(let i = 0; i < size; i++)
     {   
@@ -45,13 +47,13 @@ window.onload = () =>
     
     createDivs(slider.value, color)
 
-
+    let size = slider.value
     
     slider.addEventListener("click", () => 
     {
-        let value = slider.value;
-        sliderValue.innerHTML = slider.value;
-        createDivs(value, color);
+        size = slider.value;
+        sliderValue.innerHTML = slider.value + 'x' + slider.value;
+        createDivs(size);
     })
 
 
@@ -81,5 +83,15 @@ window.onload = () =>
         isRainbow = true;
     })
 
+    function clearContainer()
+    {
+        createDivs(size)
+    }
 
+    let clear = document.getElementById('clear');
+    clear.addEventListener('click', () =>
+    {
+        clearContainer()
+        
+    })
 }

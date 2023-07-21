@@ -7,19 +7,28 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js" ></script>
 </head>
-<body>
+<body> 
+    <div class="title">
+        Etch and Sketch
+    </div>
+    <div id = "options-and-container">
     <div id = "options">
         <p>Options</p>
+        <p>Size</p>
         <div class="slidecontainer">
             <input type="range" min="1" max="64" value="16" class="slider" id="myRange">
             <p id = "slide-value"></p>
-            <div id = "colors">
-                <input type="button" id="black" value = "Black">
-                <input type ="button" id ="rainbow" value="Rainbow">
-                <input type="button" id = "clear" value="Clear">
-            </div>
         </div>
+        <p>Color</p>
+        <div id = "colors">
+            <input type="button" id="black" class="color-button" value = "Black">
+            <input type ="button" id ="rainbow" class="color-button" value="Rainbow">
+            <input type="button" id ="clear" class="color-button" value="Clear">
+        </div>
+        
     </div>
-    <div id = "divs-container"></div>
+    <div id = "divs-container">
+    </div>
+</div>
 </body>
 </html>

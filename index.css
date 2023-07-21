@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+
 body{
-    display: flex   ;
+    display: flex;
+    flex-direction: column;
+    background-color: #5F4B8BFF;
 }
 
 #divs-container
@@ -7,9 +11,12 @@ body{
     width: 40%;
     aspect-ratio: 1/1;
     display: flex;
+    flex 4;
     flex-direction: column;
     border: 3px solid black;
     align-self: flex-end;
+    margin : 5% 10%;
+    background-color: white;
 }
 
 .divs-row
@@ -21,7 +28,7 @@ body{
 
 .square
 {
-    border: 1px solid black;
+    
     flex: 1;
 
 }
@@ -33,11 +40,148 @@ body{
 
 
 #options
-{
-    flex: 1;
+{   
+    align-self: center; 
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    margin: 0% 15%;
+    background-color: #E69A8DFF;
+    aspect-ratio: 4/1;
+    padding: 5% 2%;
+    border-radius: 4%/2%;
+    font-family: 'Exo';
+    font-size: 20px;
+    color: #5F4B8BFF;
+
 }
 
 .clicked-square
 {
     color: black;
 }
+
+#colors
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.color-button
+{
+    font-size: 20px;
+    background-color: #5F4B8BFF;
+    color: #E69A8DFF;
+    margin-bottom: 10%;
+    border: none;
+    border-radius: 5%/5%;
+    font-family: 'Exo';
+    
+}
+
+.title
+{
+    text-align: center;
+    font-size: 50px;
+    flex: 1;
+    color: #E69A8DFF;
+    font-family: 'Exo';
+}
+
+#options-and-container
+{
+    display: flex;
+    flex: 1;
+
+}
+
+#myRange
+{
+    background-color: #5F4B8BFF;
+    -webkit-appearance: none;
+}
+
+#myRange:focus {
+    outline: none;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #000000;
+    background: #5F4B8BFF;
+    border-radius: 5px;
+    border: 1px solid #000000;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000;
+    border: 1px solid #000000;
+    height: 30px;
+    width: 15px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -11px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #5F4B8BFF;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #000000;
+    background: #5F4B8BFF;
+    border-radius: 5px;
+    border: 1px solid #000000;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000;
+    border: 1px solid #000000;
+    height: 30px;
+    width: 15px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #5F4B8BFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #000000;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #5F4B8BFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #000000;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 1px 1px 1px #000000;
+    border: 1px solid #000000;
+    height: 30px;
+    width: 15px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #5F4B8BFF;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #5F4B8BFF;
+  }
